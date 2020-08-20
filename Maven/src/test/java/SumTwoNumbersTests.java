@@ -8,12 +8,7 @@ public class SumTwoNumbersTests {
     public void simpleTest() {
         int[] a = {1, 40};
         assertTrue(SumTwoNumbers.execute(a, 41));
-    }
-
-    @Test
-    public void simpleFail() {
-        int[] a = {1, 39};
-        assertFalse(SumTwoNumbers.execute(a, 41));
+        assertFalse(SumTwoNumbers.execute(a, 42));
     }
 
     @Test
@@ -24,7 +19,7 @@ public class SumTwoNumbersTests {
     }
 
     @Test
-    public void simpleNegativesPass() {
+    public void simpleNegatives() {
         int[] a = {50, -30, 20, 39};
         assertTrue(SumTwoNumbers.execute(a, 9));
         assertFalse(SumTwoNumbers.execute(a, -50));
